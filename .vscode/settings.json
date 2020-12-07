@@ -12,9 +12,7 @@
 	// PHPCS
 	"phpcs.enable": true,
 	"phpcs.standard": "WebDevStudios",
-	"phpcs.executablePath": "/Users/tommcfarlin/.composer/vendor/bin/phpcs",
 	"phpcs.showWarnings": true,
 	"phpcs.composerJsonPath": "composer.json",
 	"phpcs.errorSeverity": 5,
-	"php.suggest.basic": true
 }

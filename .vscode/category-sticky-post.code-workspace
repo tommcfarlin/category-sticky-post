@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.autoSave": "afterDelay",
+		"workbench.colorTheme": "Dracula Pro (Van Helsing)",
+		"workbench.preferredDarkColorTheme": "Dracula Pro (Van Helsing)",
+		"workbench.tree.indent": 4,
+		"php.suggest.basic": true
+	}
+}
