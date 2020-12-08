@@ -15,7 +15,7 @@ class MetaBox extends AbstractMetaBox {
 	public function render() {
 		add_meta_box(
 			'category-sticky-post-metabox',
-			'Category Sticky Post',
+			'<span style="font-weight:500;font-size:13px;">Category Sticky Post</span>',
 			[ $this, 'display' ],
 			'post',
 			'side',
