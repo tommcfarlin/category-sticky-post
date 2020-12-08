@@ -3,7 +3,7 @@
 	"description": "Mark a post to be displayed – or stuck – to the top of the archive page for the specified category.",
 	"type": "wordpress-plugin",
 	"license": "GPL-3.0-or-later",
-	"homepage": "https://github.com/tommcfarlin/remove-empty-shortcodes/issues",
+	"homepage": "https://github.com/tommcfarlin/category-sticky-post/",
 	"authors": [
 		{
 			"name": "Tom McFarlin",
@@ -15,6 +15,7 @@
 		"issues": "https://github.com/tommcfarlin/category-sticky-post/issues"
 	},
 	"require": {
+		"php": "~7.3",
     "composer/installers": "^1.6"
   },
 	"autoload": {
