@@ -7,7 +7,7 @@
 		<select style="width:90%;" name="category_sticky_post">
 			<option value="0">Select a category...</option>
 			<?php foreach ( get_categories() as $category ) : ?>
-				<option value="<?php echo $category->term_id; ?>" <?php selected( get_post_meta( get_the_ID(), 'category_sticky_post', true ), $category->term_id, true ) ?>?>
+				<option <?php selected( get_post_meta( get_the_ID(), 'category_sticky_post', true ), $category->term_id, true ); ?> value="<?php echo $category->term_id; ?>">
 					<?php echo ucwords( $category->category_nicename ); // phpcs:ignore ?>
 				</option>
 			<?php endforeach; ?>
