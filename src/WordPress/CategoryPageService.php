@@ -57,7 +57,7 @@ class CategoryPageService {
 	 * Creates the label and the checkbox used to give the user the option to hide or to display
 	 * the sticky post border.
 	 *
-	 * @param    WP_term    $category    The category for which we're looking to find the sticky post.
+	 * @param    WP_Term    $category    The category for which we're looking to find the sticky post.
 	 *
 	 * @return   WP_Query                The query used to return the category with the sticky post.
 	 *
