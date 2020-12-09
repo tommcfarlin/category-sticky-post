@@ -22,3 +22,6 @@ vendor/
 *.log
 *.sql
 *.sqlite
+
+# ignore system files
+.DS_Store
