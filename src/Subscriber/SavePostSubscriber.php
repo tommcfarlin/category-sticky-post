@@ -6,6 +6,6 @@ use TomMcFarlin\CategoryStickyPost\WordPress\Admin\SavePostProcessor;
 
 class SavePostSubscriber extends AbstractSubscriber {
 	public function subscribe() {
-		( new SavePostProcessor() )->save( 'save_post' );
+		( new SavePostProcessor() )->add( 'save_post' );
 	}
 }

@@ -6,6 +6,6 @@ use TomMcFarlin\CategoryStickyPost\WordPress\Admin\StylesheetService;
 
 class AssetSubscriber extends AbstractSubscriber {
 	public function subscribe() {
-		( new StylesheetService() )->load( 'wp_enqueue_scripts' );
+		( new StylesheetService() )->add( 'wp_enqueue_scripts' );
 	}
 }
