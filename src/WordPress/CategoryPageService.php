@@ -2,10 +2,12 @@
 
 namespace TomMcFarlin\CategoryStickyPost\WordPress;
 
+use TomMcFarlin\CategoryStickyPost\Utilities\Service;
+
 use WP_Term;
 use WP_Query;
 
-class CategoryPageService {
+class CategoryPageService extends Service {
 	public function process( string $hook ) {
 		add_action( $hook, [ $this, 'reorder_category_posts' ], 99, 2 );
 	}
@@ -45,12 +47,6 @@ class CategoryPageService {
 		$posts = array_merge( $new_posts, $posts );
 
 		return $posts;
-	}
-
-	private function is_category_page( $query ) {
-		return (
-			$query->is_main_query() && is_archive() && 0 === get_query_var( 'paged' ) && '' !== get_query_var( 'cat' )
-		);
 	}
 
 	/**
