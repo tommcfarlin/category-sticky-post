@@ -2,7 +2,7 @@
 
 namespace TomMcFarlin\CategoryStickyPost\WordPress\Admin;
 
-class SavePostProcessor {
+class SavePostService {
 
 	private $meta_key;
 
@@ -16,7 +16,7 @@ class SavePostProcessor {
 		$this->post_type = 'post';
 	}
 
-	public function save( string $hook ) {
+	public function add( string $hook ) {
 		add_action( $hook, [ $this, 'save_post' ], 99, 1 );
 	}
 

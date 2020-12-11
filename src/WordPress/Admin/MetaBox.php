@@ -4,12 +4,8 @@ namespace TomMcFarlin\CategoryStickyPost\WordPress\Admin;
 
 class MetaBox extends AbstractMetaBox {
 
-	public function __construct( string $hook ) {
-		$this->hook = $hook;
-	}
-
-	public function load() {
-		add_action( $this->hook, [ $this, 'render' ] );
+	public function add( string $hook ) {
+		add_action( $hook, [ $this, 'render' ] );
 	}
 
 	public function render() {

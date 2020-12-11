@@ -6,6 +6,6 @@ use TomMcFarlin\CategoryStickyPost\WordPress\Admin\MetaBox;
 
 class MetaBoxSubscriber extends AbstractSubscriber {
 	public function subscribe() {
-		( new MetaBox( 'add_meta_boxes' ) )->load();
+		( new MetaBox() )->add( 'add_meta_boxes' );
 	}
 }

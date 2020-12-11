@@ -6,6 +6,6 @@ use TomMcFarlin\CategoryStickyPost\WordPress\CategoryPageService;
 
 class CategoryPageSubscriber extends AbstractSubscriber {
 	public function subscribe() {
-		( new CategoryPageService() )->process( 'the_posts' );
+		( new CategoryPageService() )->add( 'the_posts' );
 	}
 }

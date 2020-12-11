@@ -8,7 +8,7 @@ use WP_Term;
 use WP_Query;
 
 class CategoryPageService extends Service {
-	public function process( string $hook ) {
+	public function add( string $hook ) {
 		add_action( $hook, [ $this, 'reorder_category_posts' ], 99, 2 );
 	}
 

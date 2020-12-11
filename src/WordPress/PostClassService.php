@@ -4,7 +4,7 @@ namespace TomMcFarlin\CategoryStickyPost\WordPress;
 
 class PostClassService {
 
-	public function process( string $hook ) {
+	public function add( string $hook ) {
 		add_filter( $hook, [ $this, 'apply_post_class' ], 10, 1 );
 	}
 
