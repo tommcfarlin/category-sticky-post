@@ -1,0 +1,12 @@
+.post.category-sticky {
+	border-top:    1px dotted #888;
+	border-bottom: 1px dotted #888;
+}
+
+.post.category-sticky .entry-title {
+	margin-top: 1em;
+}
+
+.post.category-sticky .entry-content {
+	margin-bottom: 1em;
+}

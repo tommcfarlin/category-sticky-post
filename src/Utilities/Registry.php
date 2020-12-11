@@ -6,6 +6,7 @@ use TomMcFarlin\CategoryStickyPost\Subscriber\MetaBoxSubscriber;
 use TomMcFarlin\CategoryStickyPost\Subscriber\SavePostSubscriber;
 use TomMcFarlin\CategoryStickyPost\Subscriber\CategoryPageSubscriber;
 use TomMcFarlin\CategoryStickyPost\Subscriber\PostClassSubscriber;
+use TomMcFarlin\CategoryStickyPost\Subscriber\AssetSubscriber;
 
 class Registry {
 
@@ -14,6 +15,7 @@ class Registry {
 		SavePostSubscriber::class,
 		CategoryPageSubscriber::class,
 		PostClassSubscriber::class,
+		AssetSubscriber::class,
 	];
 
 	public function run() {
