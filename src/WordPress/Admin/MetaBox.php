@@ -8,7 +8,7 @@ class MetaBox extends AbstractMetaBox {
 		$this->hook = $hook;
 	}
 
-	public function load() {
+	public function add() {
 		add_action( $this->hook, [ $this, 'render' ] );
 	}
 

@@ -5,7 +5,7 @@ namespace TomMcFarlin\CategoryStickyPost\WordPress\Admin;
 use TomMcFarlin\CategoryStickyPost\Utilities\Service;
 
 class StylesheetService extends Service {
-	public function load( string $hook ) {
+	public function add( string $hook ) {
 			add_action( $hook, [ $this, 'add_stylesheet' ] );
 	}
 
