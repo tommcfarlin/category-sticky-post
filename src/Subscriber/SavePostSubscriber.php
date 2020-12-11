@@ -2,10 +2,10 @@
 
 namespace TomMcFarlin\CategoryStickyPost\Subscriber;
 
-use TomMcFarlin\CategoryStickyPost\WordPress\Admin\SavePostProcessor;
+use TomMcFarlin\CategoryStickyPost\WordPress\Admin\SavePostService;
 
 class SavePostSubscriber extends AbstractSubscriber {
 	public function subscribe() {
-		( new SavePostProcessor() )->add( 'save_post' );
+		( new SavePostService() )->add( 'save_post' );
 	}
 }
