@@ -1,6 +1,6 @@
 <?php
 
-namespace TomMcFarlin\CategoryStickyPost\WordPress\Admin;
+namespace TomMcFarlin\CategoryStickyPost\WordPress;
 
 use TomMcFarlin\CategoryStickyPost\Utilities\Service;
 
