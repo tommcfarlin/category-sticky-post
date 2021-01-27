@@ -9,6 +9,14 @@
 		"workbench.colorTheme": "Dracula Pro (Van Helsing)",
 		"workbench.preferredDarkColorTheme": "Dracula Pro (Van Helsing)",
 		"workbench.tree.indent": 4,
-		"php.suggest.basic": true
+		"php.suggest.basic": true,
+
+		// PHPCS
+		"phpcs.enable": true,
+		"phpcs.standard": "WebDevStudios",
+		"phpcs.showWarnings": true,
+		"phpcs.composerJsonPath": "composer.json",
+		"phpcs.errorSeverity": 5,
+		"phpcs.executablePath": "./vendor/bin/phpcs",
 	}
 }
